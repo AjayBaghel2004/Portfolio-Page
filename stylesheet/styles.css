@@ -9,10 +9,22 @@
   justify-content: space-around;
   align-items: center;
   border: 1px solid black;
-  height: 6vh;
+  height: 7vh;
   background-color: #343a40;
   color: #FFFFFF;
   font-family: "Inter";
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo img {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
 }
 
 .header nav {
