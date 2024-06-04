@@ -35,7 +35,7 @@
   list-style-type: none;
 }
 
-.navigation-bar li a {
+.navigation-bar  a {
   text-decoration: none;
   margin: 0 10px;
   color: #FFFFFF;
