@@ -4,17 +4,18 @@
   box-sizing: border-box;
 }
 
+/* Header section start */
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
   height: 7vh;
-  background-color: #343a40;
+  background: linear-gradient(90deg, rgba(162,48,239,1) 0%, rgba(172,48,236,1) 35%, rgba(206,48,229,1) 100%);
   color: #FFFFFF;
   font-family: "Inter";
 }
 
+/* logo start */
 .logo {
   display: flex;
   flex-direction: row;
@@ -26,7 +27,9 @@
   width: 25px;
   margin-right: 20px;
 }
+/* logo end */
 
+/* Navigation start */
 .header nav {
   display: flex;
 }
@@ -40,3 +43,42 @@
   margin: 0 10px;
   color: #FFFFFF;
 }
+/* Navigation end */
+/* Header section end */
+
+/* Main section start */
+/* Wave background style start */
+.background-wave {
+  position: relative;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(162,48,239,1) 0%, rgba(172,48,236,1) 35%, rgba(206,48,229,1) 100%);
+  height: 70rem;
+  width: 100%;
+}
+
+.background-wave:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-image: url('E:/New folder/Portfolio-Page/images/wave.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 43rem;
+}
+
+.background-wave h1 {
+  font-family: "Kanit";
+  color: #FFFFFF;
+  font-size: 8vh;
+}
+/* Wave background style end */
+/* Main section end */
