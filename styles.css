@@ -86,7 +86,7 @@ main {
   left: 0;
   width: 100%;
   height: 500px;
-  background-image: url('wave.png');
+  background-image: url('images/wave.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
