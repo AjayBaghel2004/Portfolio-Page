@@ -17,6 +17,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 button:hover {
   border: 1px solid #eac2f8;
   color: white;
@@ -99,15 +103,31 @@ main {
   padding: 15rem;
 }
 
-.intro-wrapper h1 {
-  font-family: "Kanit";
-  color: #FFFFFF;
+.title span:nth-child(1),
+.title span:nth-child(2) {
+  color: white;
+  line-height: 1;
+}
+
+.title span:nth-child(1) {
+  display: inline-block;
   font-size: 8vh;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.title span:nth-child(2) {
+  display: block;
+  font-size: 10vh;
+  font-family: "Noto Sans TC";
 }
 
 .intro-wrapper p {
-  color: #FFFFFF;
-  font-size: 2vh;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: 200;
+  font-size: 4vh;
+  letter-spacing: 8px;
 }
 
 .intro-button-wrapper {
@@ -115,7 +135,7 @@ main {
   justify-content: space-between;
   align-items: center;
   border: 1px solid black;
-  margin-top: 30px;
+  margin-top: 50px;
   font-weight: bold;
   width: 200px;
   padding: 5px 10px;
@@ -128,8 +148,12 @@ main {
   display: flex;
 }
 
-.intro-wrapper img {
+.arrow-wrapper img {
   height: 20px;
+}
+
+.footer-container p:nth-child(1) {
+  font-size: 2vh;
 }
 
 .footer-navigation p {
@@ -176,3 +200,37 @@ main {
 }
 /* Wave background style end */
 /* Main section end */
+
+
+/*********************************
+*           Contact              *
+*********************************/
+
+.about-main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(162,48,239,1) 0%, rgba(172,48,236,1) 35%, rgba(206,48,229,1) 100%);
+}
+
+.about-title h1 {
+  display: inline-block;
+  border-bottom: 1px solid white;
+  line-height: 1;
+  color: white;
+  font-size: 5vh;
+}
+
+.about-title span {
+  display: block;
+  color: white;
+  line-height: 1;
+  margin-top: 10px;
+  font-size: 2vh;
+}
+
+.about-main-container img {
+  border-radius: 100%;
+  height: 300px;
+  border: 1px solid black;
+}
