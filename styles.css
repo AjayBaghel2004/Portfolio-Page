@@ -9,7 +9,7 @@ html {
 }
 
 /* Common styles */
-button {
+.intro-button-wrapper {
   font-family: "Inter";
   font-size: 2vh;
   border-radius: 35px;
@@ -21,7 +21,7 @@ a {
   text-decoration: none;
 }
 
-button:hover {
+.intro-button-wrapper:hover {
   border: 1px solid #eac2f8;
   color: white;
   background: linear-gradient(90deg, rgba(162,48,239,1) 0%, rgba(172,48,236,1) 35%, rgba(206,48,229,1) 100%);
@@ -201,7 +201,7 @@ main {
 
 
 /*********************************
-*           Contact              *
+*           About              *
 *********************************/
 
 .about-container {
@@ -230,4 +230,97 @@ main {
   border-radius: 100%;
   height: 350px;
   border: 1px solid black;
+}
+
+/*********************************
+*           Contact              *
+*********************************/
+
+.contact-title {
+  text-align: center;
+  color: white;
+  font-size: 5vh;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+  align-items: center;
+}
+
+.contact-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 30%;
+  padding: 30px 30px;
+}
+
+.contact-card-wrapper span {
+  background: linear-gradient(90deg, rgba(162,48,239,1) 0%, rgba(172,48,236,1) 35%, rgba(206,48,229,1) 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 3vh;
+}
+
+.name-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.name-input input {
+  flex: 1;
+}
+
+.contact-card-wrapper input {
+  height: 50px;
+  padding-left: 10px;
+  font-size: 2vh;
+  border: 1px solid #d5d9dc;
+  box-shadow: none;
+}
+
+.contact-card-wrapper input:nth-child(3),
+.contact-card-wrapper textarea {
+  margin-bottom: 20px;
+}
+
+.contact-card-wrapper textarea {
+  height: 10rem;
+  font-size: 2vh;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: "Inter";
+  border-color: #d5d9dc;
+}
+
+.contact-card-wrapper button {
+  height: 50px;
+  color: white;
+  background-color: #a630ed;
+  border-radius: 35px;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 2vh;
+  border: 0;
+}
+
+.contact-card-wrapper input:focus,
+.contact-card-wrapper textarea:focus {
+  outline: 1px solid #dab6f5;
+}
+
+.contact-card-wrapper input:hover,
+.contact-card-wrapper textarea:hover {
+  border-color: #dab6f5;
+}
+
+.contact-card-wrapper img {
+  height: 20px;
+  margin-left: 10px;
+  position: absolute;
+  justify-content: center;
 }
