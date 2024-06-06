@@ -152,12 +152,10 @@ main {
   height: 20px;
 }
 
-.footer-container p:nth-child(1) {
-  font-size: 2vh;
-}
-
-.footer-navigation p {
+.footer-text {
   color: white;
+  font-family: "Montserrat";
+  font-size: 2vh;
 }
 
 .footer-container {
@@ -206,11 +204,10 @@ main {
 *           Contact              *
 *********************************/
 
-.about-main-container {
+.about-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: linear-gradient(90deg, rgba(162,48,239,1) 0%, rgba(172,48,236,1) 35%, rgba(206,48,229,1) 100%);
 }
 
 .about-title h1 {
