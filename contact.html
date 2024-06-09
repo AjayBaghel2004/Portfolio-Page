@@ -1,50 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Portfolio</title>
         <link rel="stylesheet" href="styles.css"/>
-
-        <!-- Inter Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
-        <!-- Kanit Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-        <!-- Montserrat Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-        <!-- Noto Sans TC Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-
-        <!-- Reusable content -->
-        <script src="main.js"></script>
+        <link rel="stylesheet" href="responsive.css"/>
+        <script defer src="main.js"></script>
     </head>
     <body>
-        <custom-header></custom-header>
+        <div class="hero">
+            <header class="centering-items">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <nav class="navbar centering-items">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </header>
 
-        <main class="project-main-container">
-            <div class="background-wave">
-              <h1 class="contact-title">Contact</h1>
-                <div class="card-wrapper">
+            <main class="contact-container centering-items">
+                <div class="card-container">
+                    <h1>Start Your Project</h1>
 
-                    <div class="contact-card-wrapper">
-                        <span>Start Your Project</span>
-
-                        <div class="name-input">
-                            <input type="text" name="fname" placeholder="First Name">
-                            <input type="text" name="lname" placeholder="Last Name">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" name="fname" placeholder="First Name" required>
+                            <input type="text" name="lname" placeholder="Last Name" required>
                         </div>
 
-                        <input type="email" name="email" placeholder="email address">
-                        <textarea name="message" placeholder="message"></textarea>
-                        <button>Submit<img src="images/paper-plane.png" alt="Paper Plane"/></button>
-                    </div>
+                        <input type="email" name="email" placeholder="address" required>
+                        <textarea name="message" placeholder="message" required></textarea>
+                        <button type="submit">Submit<img src="images/paper-plane.png"/></button>
+                    </form>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <custom-footer></custom-footer>
-    </body>
-</html>
+            <footer class="footer-wrapper centering-items">
+                <span>connect with us on social media</span>
+
+                <nav class="links-navbar">
+                    <a href="#"><img src="images/facebook-icon.png"></a>
+                    <a href="#"><img src="images/github-icon.png"></a>
+                    <a href="#"><img src="images/twitter-icon.png"></a>
+                    <a href="#"><img src="images/instagram-icon.png"></a>
+                    <a href="#"><img src="images/linkedin-icon.png"></a>
+                </nav>
+            </footer>
+          </div>
+      </body>
+  </html>

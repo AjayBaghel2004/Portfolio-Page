@@ -1,0 +1,65 @@
+@media only screen and (max-width: 480px) {
+    body {
+      background-color: white;
+    }
+  
+    .intro-illustration {
+      display: none;
+    }
+  
+    .title-text span:nth-child(1) {
+      font-size: 30px;
+    }
+  
+    .title-text span:nth-child(2) {
+      font-size: 60px;
+    }
+  
+    .main-content p {
+      font-size: 15px;
+    }
+  
+    .main-content button {
+      font-size: 14px;
+    }
+  
+    .footer-wrapper {
+      flex-direction: column;
+      line-height: 40px;
+    }
+  
+    main {
+      margin-top: 80px;
+    }
+  
+    /********************************
+    *           About               *
+    ********************************/
+  
+    .about-container {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .about-title {
+      margin-top: 20px;
+      width: 80%;
+    }
+  
+    .about-title h1 {
+      font-size: 30px;
+    }
+  
+    .about-title span {
+      font-size: 15px;
+    }
+  
+    .about-title p {
+      line-height: 5;
+    }
+  
+    .profile-icon {
+      width: 100px;
+    }
+  }
+  
